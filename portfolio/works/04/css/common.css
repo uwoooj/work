@@ -1,0 +1,71 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 ,0 ,0 ,0);
+    border: 0;
+}
+
+
+.category{
+    font-family: 'poppins','Noto Sans KR', sans-serif;
+    display: block;
+    margin-bottom: 8px;
+    color: #1655bf;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+.intro{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 180px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.intro .title{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 16px;
+    color: #222;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.41;
+}
+
+.sc_products .title{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    margin-bottom: 12px;
+    color: inherit;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.41;
+}
+
+.sc_products .category{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 4px;
+    color: #0a51b7;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Poppins;
+    line-height: 1.56;
+
+}
+
+
+
+
+
+.content{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.78;
+}

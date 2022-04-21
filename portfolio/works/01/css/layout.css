@@ -1,0 +1,723 @@
+@import 'common.css';
+@import 'reset.css';
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+
+body{
+    font-family: 'Poppins', sans-serif;
+        over-flow-x: hidden;
+        overflow-y: hidden
+        
+}
+
+
+/*  max-width
+최대값을 잡는거고 최소는 잡지않았기 때문에 계속 줄어들수있다.
+*/
+
+
+.inner{
+    /* max-width: 1500px;
+    padding: 0 50px; */
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+header{
+    padding: 0 100px;
+    height: 138px;
+    background-color: rgba(255,255,255,0);
+    position: absolute;
+    /* background: #f00; */
+    width: 100%;
+    vertical-align: top;
+    z-index: 101;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+header .top_area{
+   height: 100%;
+}
+
+
+
+header .top_area .menu.white{}
+
+
+
+header .inner{
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+}
+
+
+
+header .logo{}
+header .logo img{}
+  
+header .logo a{
+    display: block;
+    width: 232px;
+    height: 54px;
+    background: url(https://criskincosmeceutical.it/wp-content/uploads/2021/12/logo-bianco.png);
+    background-size: 100%;
+}
+header .nav{
+    margin-left: auto;
+    height: 100%;
+}
+
+header .nav > ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+    
+}
+header .nav > ul > li{
+    height: 100%;
+    margin: 0 21px;
+    position: relative;}
+
+header .nav ul > li >a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+header .nav ul li a:hover{
+    color: #ff008C;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+
+}
+
+header .nav ul li a::before{
+color: #ff008C;
+text-decoration: underline;
+text-underline-offset: 1px;
+transition: right 0.3s, opacity 0.3s;
+}
+
+
+header .nav .subs{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+}
+header .nav .subs li{padding: 0 21px 0 36px;}
+header .nav .subs li a{
+    display: block;
+    margin: 8px 0;
+    padding-right: 15px;
+    color: #54565a;
+    text-align: center;}
+
+
+
+header .nav .menu{}
+header .nav .menu a{
+    color: #fff;
+    font-weight: 700;
+    line-height: 1em;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+header .nav .menu li{
+}
+
+header .nav .menu .qodef{
+    font-size: 20px;
+}
+.fa{
+    font-size: 20px;
+}
+
+
+header .heart{}
+header .heart a{
+    position: relative;
+    display: block;
+    color: #fff;
+    
+}
+header .heart a:hover{
+    color: #ff008C;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+
+header .serch a{
+    display:none;
+}
+
+
+
+
+header .cart{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  margin-left: 30px;
+}
+
+header .cart a{
+    position: relative;display: block;
+}
+
+
+
+
+header .cart svg{
+    display: block;
+    width: 25px;
+    height: auto;
+    color: #fff;
+    fill: none;
+    stroke: currentColor;
+}
+
+header .cart .num{
+    background-color: #ff008c;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
+    border-radius: 100%;
+}
+
+header.white{
+        height: 70px;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        transition: 0s;
+}
+
+header.white .nav > ul{
+    margin-right: 15px;
+}
+
+header.white .logo a{
+    background: #f00;
+    background: url(../images/logo2.png);
+    display: block;
+    width: 232px;
+    height: 45px;
+    background-size: 100%;
+}
+
+header.white .nav .menu a{
+    color: #54565a;
+}
+header.white .nav .menu a:hover{
+    color: #ff008C;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+header.white .heart{
+}
+header.white .heart a{
+    margin-right: 30px;
+    color: #54565a;
+}
+
+
+
+
+header.white .heart a:hover{
+    color: #ff008C;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+
+
+
+header.white .serch a{
+    display:block;
+}
+
+
+
+
+
+
+
+header.white .cart a{
+    color: #54565a;
+}
+
+header.white .cart svg{
+    color: #54565a;
+}
+
+
+
+
+.qodef-menu-item-arrow {display: none;}
+
+
+
+
+
+header.show{
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+
+/*  header------------------------ */
+
+
+
+footer{
+    background-color: #f2f2f2;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+footer .inner{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0 solid #e1e1e1;
+}
+footer .top_area{
+    display: flex;
+    padding: 114px 0 44px;
+
+}
+
+footer .top_area .logo_area{padding-left: 70px;}
+footer .top_area .logo_area .logo{
+    display: inline-block;
+    background: url(../images/logo2.png) no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 58px;
+    margin-right: 70px;
+
+}
+
+
+footer .item_area{
+   
+    flex: 1;
+    padding: 0 0 0 30px;
+     
+    /* display: flex;
+    align-items:center;  위아래 기준 중앙정렬
+	justify-content:center; 좌우 기준 중앙정렬  */
+}
+footer .item_area ul{
+    float: left;
+    width: calc((100% - 20px)/3)
+}
+footer .item_area ul li{
+    margin: 0 0 18px;
+}
+footer .item_area ul li a{
+        color: #54565a;
+}
+
+footer .item_area ul li a:hover{
+    color: #ff008C;
+   
+}
+
+footer .bottom_area{
+    padding: 13px 0;
+    background-color: #f2f2f2;
+    border-top: 0 solid #e1e1e1;
+}
+footer .bottom_area .wrap{
+    display: flex;
+   color: #878787;
+   padding: 0 100px;
+}
+
+
+footer .bottom_area address{
+    flex: 1 0 50%;
+    text-align: left;
+}
+footer .bottom_area address p{
+    height: 38px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    line-height: 1.49em;
+}
+
+footer .bottom_area .link{
+    display: flex;
+    justify-content: end;
+    flex: 1 0 50%;
+    text-align: left;
+    justify-content: space-between;
+}
+
+footer .bottom_area .link a:hover{
+    color: #ff008C;
+}
+
+
+footer .bottom_area .privacy{
+    display: block;
+    margin-right: 20px;
+    font-size: 13px;
+}
+footer .bottom_area .cookie{
+    display: block;
+    margin-right: 50px;
+    font-size: 13px;
+
+}
+footer .bottom_area .design{
+    display: block;
+    font-size: 13px;
+}
+
+
+
+
+/* */
+.m_menu{display: none;}
+
+
+
+/* //분기점은 상황에 따라 다르지만 최소 위드 기준 + 100*/
+ /*반응형은 항상 스크롤이 생기면 안됨 */
+
+@media screen and (max-width: 1500px) {
+    header .open_menu{display: none;}
+
+    header .nav{display: block;}
+
+
+    footer .item_area{
+        padding: 0 0 0 30px;
+     }
+    footer .top_area {
+        display: flex;
+        padding: 65px 0 44px;
+    }  
+    footer .bottom_area address p {
+        width: 434px;
+    }
+
+}
+
+
+
+ @media screen and (max-width: 1300px) /* 1024*/{
+    header{
+        height: 80px;
+        padding: 0 50px;
+    }
+    header .inner{
+        position: inherit;
+        
+    }
+    header .nav .menu{display: none;}
+    header .nav .menu.show{
+        display: block;
+        margin: 0 auto;
+        padding: 34px 0;
+    }
+    header .nav .menu.slide{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background: #fff;
+        color: 000;
+        width: 100%;
+        /* height: auto; */
+}
+
+
+    header .menu_btn{
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    header .menu_btn {
+    
+        display: none;
+    }
+
+
+    header .menu_btn:hover{
+        color: #ff008c;
+    }
+
+    header .menu_btn .qodef_open{display: block;}
+
+   
+    
+    header .nav > ul.on{display: block;}
+
+
+    header .menu_btn .qodef-m-line{    
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: currentColor;
+        transition: top .3s ease,transform .3s ease;}
+    
+    header .menu_btn .qodef-m-line.qodef--1{top: 8px;}
+    header .menu_btn .qodef-m-line.qodef--2{top: 17px;}
+
+
+
+
+
+    header .nav > ul{display: none;}
+    header .nav{display: flex;align-items: center;}
+    header .m_menu{display: block; width: 30px; height: 30px; }
+    header .logo a{
+        display: block;
+        width: 180px; height: 39px;}
+
+
+    header .nav > ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background: #fff;
+        color: 000;
+        width: 100%;
+        height: auto;
+    }
+    header .nav > ul.slide{
+        display: block;
+    }
+
+    header .nav > ul > li > a{
+        line-height: 50px;
+            padding: 8px 0;
+
+ }
+
+ header .nav .menu a{
+     color: #000;
+ }
+
+ header .nav .subs{
+     position: inherit;
+ }
+ header .nav .subs li a {
+    display: inline-block;
+ }
+ footer .item_area{
+    padding: 0 0 0 30px;
+ }
+ footer .top_area .logo_area .logo {
+    margin-right: 0;
+
+ }
+
+}
+
+
+/* 태블릿 */
+ @media screen and (max-width: 1024px) /* 768 */ {
+    header{
+        background: #fff;
+        }
+    
+    header.white{
+        display: none;
+    }
+    header .logo a {
+        display: block;
+        width: 154px;
+        height: 30px;
+        background: url(https://criskincosmeceutical.it/wp-content/uploads/2021/12/logo-criskin-grigio.png) no-repeat;
+        background-size: 100%;
+    }
+    header .cart .num {
+        display: none;
+    }
+    header .menu_btn{display: block;}
+
+    header .heart {
+        display: none;
+    }
+
+    header .nav .menu.on {display: block;}
+
+    footer{}
+    footer .top_area .logo_area {
+        padding-left: 30px;
+    }
+    footer .top_area .logo_area .logo {
+        width: 240px;
+        height: 46px;
+    }
+
+
+    footer .bottom_area {
+     padding: 13px 0;
+    }
+    footer .bottom_area .wrap {
+        display: flex;
+        color: #878787;
+        padding: 0px 50px 20px;
+    }
+    footer .bottom_area .link {
+        display: flex;
+        flex: 1 0 50%;
+        flex-direction: column;
+    }
+    footer .item_area {
+        flex: 1;
+    
+    }
+    footer .item_area ul {
+       float: left;
+        width: calc((100% - 20px)/3);
+        margin: 0 0 30px;
+    }
+ }
+
+
+
+/* 모바일 */
+
+@media screen and (max-width: 768px) /* 320*/ {
+    header{
+    background: #fff;
+    padding: 0 34px;
+    }
+    header.white{
+        display: none;
+    }
+
+    header .inner{
+    justify-content: center;
+    }
+
+    
+    header .logo a {
+        display: block;
+        width: 154px;
+        height: 30px;
+        background: url(https://criskincosmeceutical.it/wp-content/uploads/2021/12/logo-criskin-grigio.png) no-repeat;
+        background-size: 100%;
+    }
+    header .cart{display: none;}
+    header .cart .num {
+        display: none;
+    }
+
+
+    header .open_menu{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    }
+
+    header .m_menu {
+        display: none;
+    }
+
+
+    .qodef-menu-item-arrow {
+        position: absolute;
+        width: 28px;
+        right: 0;
+    }
+
+
+    
+
+    header .menu_btn {
+    /* color: black; */
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+    footer .inner{
+        padding: 0;
+    }
+    footer .top_area {
+        flex-direction: column;
+        padding: 59px 0 44px;
+    } 
+    footer .top_area .logo_area {
+        padding-left: 25px;
+    }
+    footer .top_area .logo_area .logo {
+        display: inline-block;
+        background: url(../images/logo2.png) no-repeat;
+        background-size: cover;
+        width: 271px;
+        height: 52px;
+        margin-bottom: 2em;
+
+    }
+    footer .item_area{
+        padding: 0 34px;
+    }
+    footer .item_area ul {width: 100%; margin: 0 0 30px;}
+
+
+    footer .bottom_area {
+        padding: 0 34px;
+    }
+    footer .bottom_area .wrap {
+        flex-direction: column;
+    }
+    footer .bottom_area address p{
+        width: 100%;
+        height: 96px;
+    }
+    footer .bottom_area .wrap {
+        padding: 0;
+    }
+    
+}
